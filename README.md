@@ -12,6 +12,6 @@ for i in  img:
     resized_img=cv2.resize(new_img,(300,200))
     cv2.imshow(".\\grey\\{}".format(i),resized_img)
     print(resized_img)
-    key = cv2.waitKey(0)
+    key = cv2.waitKey(1000)
 if key==100:
         cv2.destroyAllWindows()
