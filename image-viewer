@@ -9,10 +9,11 @@ img=os.listdir("pup")
 for i in  img:
     
     #pup is the folder containing images
+    #0 is for grey images and 1 for color images
     new_img=cv2.imread(".\\pup\\{}".format(i),0)
     #resizing images
     resized_img=cv2.resize(new_img,(300,200))
-    cv2.imshow(".\\grey\\{}".format(i),resized_img)
+    cv2.imshow(".\\pup\\{}".format(i),resized_img)
     print(resized_img)
     #1 sec lapse after every image
     key = cv2.waitKey(1000)
